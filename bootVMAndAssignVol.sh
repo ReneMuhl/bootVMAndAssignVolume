@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#=========================================================
+#author: René Muhl
+#from: Leipzig, Germany
+#last change: 26.8.2013
+#email: ReneM{dot}github{at}gmail{dot}com
+#=========================================================
 
 #VM parameters
 imageID="ab1d5094-5533-453d-b557-b4ed3e58aee9"
