@@ -28,7 +28,7 @@ nova boot --image $imageID --flavor $flavorID --user-data $cloudInitConfigFile $
 cinder create --volume_type $volumeType --display_name $volumeName $volSize
 
 #get cinder volume id
-volID=`cinder list |  awk -F '|' '{print $2}' | grep -E '[0-9a-z]{8}(-[0-9a-z:]{4}){3}-[0-9a-z:]{12}'`
+volID=`cinder list |  awk -F '|' '{print $2}' | grep -E '[0-9a-z]{8}(-[0-9a-z]{4}){3}-[0-9a-z]{12}'`
 
 #waiting 10 seconds until the instance building_state != building, after that you can attach a volume
 sleep 10
